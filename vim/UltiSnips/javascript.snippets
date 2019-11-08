@@ -1,0 +1,28 @@
+snippet component "createComponent" b
+import React from 'react';
+import { connect } from 'react-redux';
+import styled from 'styled-components';
+
+class ${1:`!p snip.rv = ''.join(x.title() for x in re.sub('\.js$', '', snip.basename or 'ModuleName').split('_'))`} extends React.Component {
+
+	render() {
+		return (
+			$0
+		);
+	}
+}
+
+function mapStateToProps(state, ownProps) {
+	return {
+		$2
+	};
+}
+
+function mapDispatchToProps(dispatch) {
+	return {
+		$3
+	};
+}
+
+export default connect(mapStateToProps, mapDispatchToProps)($1);
+endsnippet
