@@ -1,0 +1,20 @@
+[url "git@github.com:"]
+	insteadOf = https://github.com/
+
+[alias]
+    s = status
+    co = checkout
+    com = checkout master
+    ci = commit
+    st = status
+    br = branch
+    cam = commit -am
+    amend = commit -a --amend
+    pum = pull origin master
+    poh = push origin HEAD
+    mm = merge master
+    bclean = "!f() { git checkout ${1-master} && git branch --merged ${1-master} | grep -v " ${1-master}$" | xargs git branch -d; }; f"
+
+[user]
+	name = Lexi Ross
+	email = lexi@aspen.team
