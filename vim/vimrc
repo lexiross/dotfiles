@@ -77,6 +77,8 @@ Plugin 'xolox/vim-misc'
 Plugin 'junegunn/fzf'
 Plugin 'junegunn/fzf.vim'
 Plugin 'tpope/vim-abolish'
+Plugin 'arthurxavierx/vim-caser'
+Plugin 'bkad/CamelCaseMotion'
 " Plugin 'xolox/vim-easytags'
 
 " syntax files
@@ -293,6 +295,8 @@ nnoremap <leader>s :vsplit<CR>
 nnoremap <leader>w :tabclose<CR>
 nnoremap vimrc :vs $MYVIMRC<CR>
 nnoremap vimre :so $MYVIMRC<CR>
+
+let g:camelcasemotion_key = '<leader>'
 
 map \ <Plug>(easymotion-prefix)
 
