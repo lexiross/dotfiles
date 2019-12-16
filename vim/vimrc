@@ -296,7 +296,7 @@ nnoremap <leader>w :tabclose<CR>
 nnoremap vimrc :vs $MYVIMRC<CR>
 nnoremap vimre :so $MYVIMRC<CR>
 
-let g:camelcasemotion_key = '<leader>'
+" let g:camelcasemotion_key = '<leader>'
 
 map \ <Plug>(easymotion-prefix)
 
@@ -357,3 +357,12 @@ function! OpenTest()
 endfunction
 
 command! Test :call OpenTest()
+
+" searches the word under the cursor
+" this also came straight from my brain, imagine!
+function! SearchWord()
+    let wordUnderCursor = expand("<cword>")
+    execute "Ag " . wordUnderCursor
+endfunction
+
+nnoremap <leader>A :call SearchWord()<CR>
