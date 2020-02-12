@@ -281,8 +281,10 @@ vnoremap <leader>c :TComment<CR>
 vnoremap <leader>C :TCommentBlock<CR>
 nnoremap <leader>e :tabnew<CR>:CommandT<CR>
 nnoremap <leader>f :Files<CR>
-nnoremap <leader>g <C-w><C-]><C-w>T
-nnoremap <leader>G <C-]>
+" nnoremap <leader>g <C-w><C-]><C-w>T
+" nnoremap <leader>G <C-]>
+nnoremap <leader>g :GoBuild<CR>
+nnoremap <leader>G :GoBuild<CR>:GoRun<CR>
 nnoremap <leader>h :tabnew<CR>:ConqueTerm bash<CR>
 nnoremap <leader>l :NERDTreeTabsToggle<CR>
 nnoremap <leader>k :CheckSyntax<CR>
